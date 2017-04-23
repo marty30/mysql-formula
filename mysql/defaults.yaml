@@ -4,8 +4,8 @@
 # so that it works correctly
 {% load_yaml as rawmap %}
 Ubuntu:
-  server: mysql-server
-  client: mysql-client
+  server: mariadb-server
+  client: mariadb-client
   service: mysql
   python: python-mysqldb
   debconf_utils: debconf-utils
@@ -48,8 +48,8 @@ Ubuntu:
     append: |
       !includedir /etc/mysql/conf.d/
 Debian:
-  server: mysql-server
-  client: mysql-client
+  server: mariadb-server
+  client: mariadb-client
   service: mysql
   python: python-mysqldb
   debconf_utils: debconf-utils
